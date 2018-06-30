@@ -64,9 +64,9 @@ const images = {
 
 // Define the backgrounds for each scene.
 const scenes = {
-"scene1": "patient.png",
-"scene2": "bar.jpg",
-"scene3": "scene1.jpg"
+"scene1": "scene1.jpg",
+"scene2": "scene2.jpg",
+"scene3": "bar.jpg"
 };
 
 // Define the Characters
@@ -109,11 +109,13 @@ let script = {
 	// The game starts here.
 	"Start": [
 	
-	// Bild 1
-	
-	// Bild 2
-	
-	"e Du erzählst deinen Freunden von dieser schockierenden Nachricht. Dabei kommt ihr auch darauf, wie die Freunde und Religionen Familie und Ehe verstehen."
+	"scene scene1 with fadeIn"
+	, "wait 2000"
+	, "e Du erzählst deinen Freunden von dieser schockierenden Nachricht. Dabei kommt ihr auch darauf, wie die Freunde und Religionen Familie und Ehe verstehen."
+	, "scene scene1 with fadeOut"
+	, "wait 100"
+	, "scene scene3 with fadeIn"
+	, "wait 50"
 	, "f Scheidung ist immer doof. Meine Eltern sind auch geschieden. Besonders hart ist das für meine Mutter, weil sie sehr religiös ist."
 	, "m Warum denn das?"
 	, "f Naja, sie ist katholisch und versucht sich an das zu halten, was die Kirche ihr empfiehlt. Da heißt, dass sie keinen neuen Mann haben darf. Die Idee dahinter ist, dass die Ehe ein Leben lang hält und erst mit dem Tod endet. Das sagt Jesus auch in der Bibel: „Was Gott verbunden hat, das darf der Mensch nicht trennen“"
@@ -124,7 +126,7 @@ let script = {
 	, "a Islamisches Eheverständnis, theologischer Kerngedanke: Auch Ehe ein Spiegel der göttlichen Liebe, wie wird die Beziehung gedeutet? Theol. Hintergrund zur Trennungsmöglichkeit."
 	, "m Bei uns gehört es auch zur Ehe, Kinder zu haben. Denn in der Ehe wird unser Leben weitergegeben, damit unsre Glaubensgemeinschaft erhalten bleibt. Deshalb sollte jeder Jude und jede Jüdin in einer Ehe leben."
 	 
-	// Bild 3
+	, "scene scene2 with fadeIn"
 	, "m Boah, jetzt haben wir so viel geredet. Was antwortest du Sophie eigentlich jetzt?"
 	, 
 	
